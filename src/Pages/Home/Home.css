@@ -1,0 +1,16 @@
+.shadow-box{
+    box-shadow: 0px 0px 10px #cfcfcf;
+}
+.img-gallery:hover .gallery{
+    transform: scale(1);
+}
+.img-gallery{
+    transition: 04s;
+}
+.gallery{
+    background-color: rgba(19, 107, 107, 0.692);
+    transition: 0.4s;
+}
+.ox-hidden{
+    overflow-x: hidden;
+}
