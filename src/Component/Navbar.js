@@ -1,12 +1,22 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 import rohul from '../images/rohul1.png'
+
 
 const Navbar = () => {
     const menuItems = <div className='lg:flex'>
-        <li><button className='btn btn-ghost'>home</button></li>
-        <li><button className='btn btn-ghost'>About</button></li>
-        <li><button className='btn btn-ghost'>Project</button></li>
-        <li><button className='btn btn-ghost'>Contact</button></li>  
+        <li><button className='btn btn-ghost'>
+            <Link activeClass="active" to="Home" spy={true} smooth={true} offset={-100} duration={500}>Home</Link>
+        </button></li>
+        <li><button className='btn btn-ghost'>
+            <Link activeClass="active" to="About" spy={true} smooth={true} offset={-120} duration={500}>About</Link>
+        </button></li>
+        <li><button className='btn btn-ghost'>
+            <Link activeClass="active" to="Project" spy={true} smooth={true} offset={-100} duration={500}>Project</Link>
+        </button></li>
+        <li><button className='btn btn-ghost'>
+            <Link activeClass="active" to="Contact" spy={true} smooth={true} offset={-150} duration={500}>Contact</Link>
+        </button></li>  
     </div>
     return (
         <div className='fixed top-0 z-50 font-bold left-0 bg-cyan-900 text-white w-full'>

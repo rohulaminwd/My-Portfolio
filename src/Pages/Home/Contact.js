@@ -4,7 +4,7 @@ import {FaPhone} from 'react-icons/fa'
 import {SiGmail} from 'react-icons/si'
 import {FiFacebook} from 'react-icons/fi'
 import {AiOutlineTwitter} from 'react-icons/ai'
-import {BsInstagram} from 'react-icons/bs'
+import {FiLinkedin} from 'react-icons/fi'
 import { useForm } from 'react-hook-form';
 
 const Contact = () => {
@@ -13,31 +13,36 @@ const Contact = () => {
         console.log(data)
     }
     return (
-        <div className='max-w-7xl mx-auto mt-10'>
+        <div id='Contact' className='max-w-7xl mx-auto mt-10'>
             <div className="bg-cyan-900 pt-10">
                 <h1 className='text-center mb-10 text-3xl md:text-5xl uppercase font-bold text-white'>contact me</h1>
                 <div className="grid grid-cols-1 gap-3 md:gap-5 text-white sm:grid-cols-2 px-2 sm:px-4 md:px-8 lg:px-16">
-                    <div className="border rounded-xl shadow-box p-2 md:p-4" data-aos="zoom-in-right" data-aos-delay="100" data-aos-duration="800">
+                    <div className="border rounded-xl p-2 md:p-4" data-aos="zoom-in-right" data-aos-delay="100" data-aos-duration="800">
                         <h1 className='text-xl font-bold'>Contact information</h1>
-                        <div className="text-white">
-                            <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id a sint incidunt. expedita fugit labore omnis!</p>
-                            <div className="">
-                                <div className='cursor-pointer my-2 flex items-center'><FaPhone />  <a className='font-bold ml-2 text-white block' href='tel:01831294559'>+01831294559</a></div>
+                        <div className="my-auto ">
+                            <div className="text-white">
+                                <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id a sint incidunt. expedita fugit labore omnis!</p>
+                                <div className="">
+                                    <div className='cursor-pointer my-2 flex items-center'><FaPhone />  <a className='font-bold ml-2 text-white block' href='tel:01831294559'>+01831294559</a></div>
+                                </div>
+                                <div className="">
+                                    <div className='cursor-pointer my-2 flex items-center'><SiGmail /> <a className='font-bold ml-2 text-white' href='mailto:rohulamin@gmail.com'>rohulamin@gmail.com</a></div>
+                                </div>
+                                <h1 className=''>Nonni Nalitabari Serpur</h1>
                             </div>
-                            <div className="">
-                                <div className='cursor-pointer my-2 flex items-center'><SiGmail /> <a className='font-bold ml-2 text-white' href='mailto:rohulamin@gmail.com'>rohulamin@gmail.com</a></div>
+                            <div className="mt-5 sm:flex justify-between items-center">
+                                <div className="mt-3">
+                                    <a href="https://web.facebook.com/rohulaminmia.rohulamin"><button className='btn md:text-xl btn-sm md:btn-md btn-circle btn-secondary border-2 border-accent text-cyan-900 font-bold'><FiFacebook /></button></a>
+                                    <a href="https://twitter.com/RahulSorkar5"><button className='btn md:text-xl btn-sm md:btn-md btn-circle mx-2 btn-secondary border-2 border-accent text-cyan-900 font-bold'><AiOutlineTwitter /></button></a>
+                                    <a href="https://www.linkedin.com/in/rohulaminwd/"><button className='btn md:text-xl btn-sm md:btn-md btn-circle btn-secondary border-2 border-accent text-cyan-900 font-bold'><FiLinkedin /></button></a>
+                                    <a href='tel:01831294559'><button className='btn md:text-xl btn-sm md:btn-md btn-circle mx-2 btn-secondary border-2 border-accent text-cyan-900 font-bold'><FaPhone /></button></a>
+                                </div>
+                                <div className="mt-3">
+                                    <a href={resome} download>
+                                        <button class="btn btn-secondary text-white btn-sm"  data-aos="zoom-in-right" data-aos-delay="700" data-aos-duration="800">Download Resume</button>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                        <div className="">
-                            <button className='btn md:text-xl btn-sm md:btn-md btn-circle btn-secondary border-2 border-accent text-cyan-900 font-bold'><FiFacebook /></button>
-                            <button className='btn md:text-xl btn-sm md:btn-md btn-circle mx-2 btn-secondary border-2 border-accent text-cyan-900 font-bold'><AiOutlineTwitter /></button>
-                            <button className='btn md:text-xl btn-sm md:btn-md btn-circle btn-secondary border-2 border-accent text-cyan-900 font-bold'><BsInstagram /></button>
-                            <button className='btn md:text-xl btn-sm md:btn-md btn-circle mx-2 btn-secondary border-2 border-accent text-cyan-900 font-bold'><FaPhone /></button>
-                        </div>
-                        <div className="mt-5">
-                        <a href={resome} download>
-                            <button class="btn btn-secondary text-white md:btn-md btn-sm"  data-aos="zoom-in-right" data-aos-delay="700" data-aos-duration="800">Download Resume</button>
-                        </a>
                         </div>
                     </div>
                     <div className="border rounded-xl p-5 text-white" data-aos="zoom-in-left" data-aos-delay="100" data-aos-duration="1000">
