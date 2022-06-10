@@ -5,6 +5,7 @@ import resome from './PH-resome (Autosaved).pdf'
 import './Home.css'
 
 const About = () => {
+    
     return (
         <div id='About' className='max-w-7xl mx-auto my-10'>
             <h1 className='text-center text-cyan-900 my-8 uppercase font-bold text-3xl md:text-5xl'>About Me</h1>
@@ -68,7 +69,7 @@ const About = () => {
                             <h1 className='text-blue-500 mb-0 font-bold'>HTML</h1>
                             <h1 className='text-primary mb-0 font-bold'><CountUp duration={2} end={95} />%</h1>
                         </div>
-                        <progress class="progress progress-primary mt-0 h-[16px] w-full" duration="500" value="95" max="100"></progress>
+                        <progress class="progress progress-primary mt-0 h-[16px] w-full" value="95" max="100"></progress>
                     </div>
                     <div className="">
                         <div className="flex justify-between">
