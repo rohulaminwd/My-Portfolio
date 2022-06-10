@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const ProjectsCart = ({project, handleProject}) => {
     return (
-        <div>
+        <div data-aos="zoom-in-down" data-aos-delay="100" data-aos-duration="800">
             <div className='rounded-xl p-3 shadow-box duration-200 hover:-translate-y-1'>
                 <div className="rounded-lg">
                     <img src={project.img1} className='rounded-md' alt="" />

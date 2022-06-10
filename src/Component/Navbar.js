@@ -19,7 +19,7 @@ const Navbar = () => {
             <Link activeClass="active" to="Project" spy={true} smooth={true} offset={-100} duration={500}>Project</Link>
         </button></li>
         <li><button className='btn btn-ghost'>
-            <Link activeClass="active" to="Contact" spy={true} smooth={true} offset={150} duration={500}>Contact</Link>
+            <Link activeClass="active" to="Contact" spy={true} smooth={true} offset={50} duration={500}>Contact</Link>
         </button></li>  
     </div>
     return (

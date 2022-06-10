@@ -13,11 +13,11 @@ const Contact = () => {
         console.log(data)
     }
     return (
-        <div id='Contact' className='max-w-7xl mx-auto mt-10'>
+        <div id='Contact' className='max-w-7xl mx-auto mt-10 ox-hidden'>
             <div className="bg-cyan-900 pt-10">
                 <h1 className='text-center mb-10 text-3xl md:text-5xl uppercase font-bold text-white'>contact me</h1>
                 <div className="grid grid-cols-1 gap-3 md:gap-5 text-white sm:grid-cols-2 px-2 sm:px-4 md:px-8 lg:px-16">
-                    <div className="border rounded-xl p-2 md:p-4" data-aos="zoom-in-right" data-aos-delay="100" data-aos-duration="800">
+                    <div className="border rounded-xl p-2 md:p-4" data-aos="zoom-in-right" data-aos-delay="200" data-aos-duration="800">
                         <h1 className='text-xl font-bold'>Contact information</h1>
                         <div className="my-auto ">
                             <div className="text-white">
@@ -45,7 +45,7 @@ const Contact = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="border rounded-xl p-5 text-white" data-aos="zoom-in-left" data-aos-delay="100" data-aos-duration="1000">
+                    <div className="border rounded-xl p-5 text-white" data-aos="zoom-in-left" data-aos-delay="200" data-aos-duration="1000">
                         <form onSubmit={handleSubmit(onSubmit)}>
                             <div className="flex justify-between">
                                 <div className="form-control w-[48%] max-w-xs">
@@ -120,7 +120,7 @@ const Contact = () => {
                             {errors.description?.type === 'minLength' && <span className="label-text-alt text-red-500">{errors.description.message}</span>}
                             </label>
                             </div>
-                        <input className='btn w-full uppercase font-bold' type="submit" value="Login"  />
+                        <input className='btn w-full btn-secondary text-white uppercase font-bold' type="submit" value="Submit"  />
                         </form>
                     </div>
                 </div>

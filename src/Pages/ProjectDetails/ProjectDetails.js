@@ -3,17 +3,17 @@ import React from 'react';
 const ProjectDetails = ({project}) => {
     return (
         <div className='px-2 mt-20 md:px-8 lg:px-16 ox-hidden'>
-            <h1 className='text-3xl md:text-5xl uppercase font-bold text-center text-secondary'>{project.name}</h1>
+            <h1 className='text-3xl md:text-5xl uppercase font-bold text-center text-cyan-500'>{project.name}</h1>
             <div className="md:flex gap-4 my-5">
                 <div className="mb-4 md:mb-0 border-4 border-cyan-500 rounded-xl">
                     <img src={project.img1} className='rounded-lg' alt="" />
                 </div>
                 <div className="flex gap-4">
                     <div className="border-4 border-cyan-500 rounded-xl">
-                        <img src={project.img1} className='rounded-lg' alt="" />
+                        <img src={project.img2} className='rounded-lg' alt="" />
                     </div>
                     <div className="border-4 border-cyan-500 rounded-xl">
-                        <img src={project.img1} className='rounded-lg' alt="" />
+                        <img src={project.img3} className='rounded-lg' alt="" />
                     </div>
                 </div>
             </div>
@@ -32,9 +32,9 @@ const ProjectDetails = ({project}) => {
             <div className="my-5">
                 <h1 className='text-2xl text-cyan-800 font-bold'>{project.name}</h1>
                 <div className="">
-                    <a className='link link-primary' href=""><button className='btn btn-ghost btn-sm'>Live Link</button></a>
-                    <a className='link link-primary' href=""><button className='btn btn-ghost btn-sm'>Server code Link</button></a>
-                    <a className='link link-primary' href=""><button className='btn btn-ghost btn-sm'>Client code link</button></a>
+                    <a className='link link-primary' href={project.liveLink}><button className='btn btn-ghost btn-sm'>Live Link</button></a>
+                    <a className='link link-primary' href={project.clientCode}><button className='btn btn-ghost btn-sm'>Server code Link</button></a>
+                    <a className='link link-primary' href={project.serverCode}><button className='btn btn-ghost btn-sm'>Client code link</button></a>
                 </div>
             </div>
         </div>
